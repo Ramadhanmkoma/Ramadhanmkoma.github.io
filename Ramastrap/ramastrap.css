@@ -1,0 +1,48 @@
+table {
+    width: 90%;
+    height: 150px;
+    text-align: center;
+}
+
+.rbtn {
+    cursor: pointer;
+    transition: .3s;
+    width: 100px;
+    height: 30px;
+    border-radius: .25rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+
+.rbtn-danger {
+    background-color: #e55;
+}
+
+.rbtn-primary {
+    background-color: #55e;
+}
+
+.rbtn-success {
+    background-color: #5e5;
+    color: #111;
+}
+
+.rbtn-warning {
+    background-color: #fa5;
+}
+
+.rbtn:hover {
+    box-shadow: 0px 0px 5px #111;
+}
+
+.rbtn-large {
+    width: 40%!important;
+    height: 35px;
+}
+
+.rbtn-large-primary {
+    width: 40%!important;
+    height: 35px;
+    background-color: #55e;
+    height: 35px;
+}
