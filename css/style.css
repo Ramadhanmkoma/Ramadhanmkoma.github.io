@@ -4,3 +4,102 @@
   --fontColor: #1e1e1e;
   --maxHeight: 100%;
 }
+
+* { margin: 0; padding: 0; }
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  width: 250px;
+}
+
+nav.nav#nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100%;
+  background-color: #1e1e1e;
+  color: var(--bgColor);
+  width: 250px;
+}
+
+.me {
+  padding: 1.5em 0;
+  animation: glow 2s infinite;
+  background-color: #66f;
+  text-align: center;
+  font-weight: 600;
+  font-size: large;
+}
+
+nav.nav#nav > ul { list-style: none; }
+
+nav.nav#nav > ul > li {
+  padding: 2em 2em;
+  background-color: #111;
+  border: 1px solid #1e1e1e;
+}
+
+.myTitle {
+  margin-left: 250px;
+  background-color: #1e1e1e;
+  display: flex;
+  padding: .64em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.name > .myname {
+  color: #e1e1e1;
+}
+
+#clickable-nav { 
+  cursor: pointer;
+  color: azure;
+  font-size: x-large;
+  transition: .3s linear;
+ }
+
+img[alt="profile"] {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #111;
+  cursor: pointer;
+}
+
+ #clickable-nav:hover { color: #1e1e1e; }
+
+@keyframes glow {
+  from {
+    text-shadow: 0px 0px 10px #f66;
+  }
+
+  25% {
+    text-shadow: 0px 0px 10px #111;
+  }
+
+  50% {
+    text-shadow: 0px 0px 10px #6f6;
+  }
+
+  75% {
+    text-shadow: 0px 0px 10px rgb(217, 223, 35);
+  }
+
+  to {
+    text-shadow: 0px 0px 10px rgb(230, 15, 169);
+  }
+  
+}
