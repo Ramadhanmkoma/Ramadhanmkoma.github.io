@@ -51,6 +51,15 @@ nav.nav#nav > ul > li {
   border: 1px solid #1e1e1e;
 }
 
+nav.nav#nav > ul > li:hover { text-decoration: overline; }
+
+nav.nav#nav > ul > li > a {
+  color: #eee;
+  text-decoration: none;
+}
+
+nav.nav#nav > ul > li > a:hover{ text-decoration: overline; }
+
 .myTitle {
   margin-left: 250px;
   background-color: #1e1e1e;
@@ -66,7 +75,7 @@ div.name > .myname {
 
 #clickable-nav { 
   cursor: pointer;
-  color: azure;
+  color: #2c88c0;
   font-size: x-large;
   transition: .3s linear;
  }
@@ -79,7 +88,35 @@ img[alt="profile"] {
   cursor: pointer;
 }
 
- #clickable-nav:hover { color: #1e1e1e; }
+main.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 250px;
+  padding: 20px;
+}
+
+main.main > .container-fluid > img[alt="view-profile"] {
+  height: 800px;
+  
+  opacity: 0.6;
+  border-radius: 24px;
+}
+
+.container-fluid {
+  margin-top: 850px;
+  position: absolute;
+  background: linear-gradient(rgba(3, 27, 59, 0.7), rgba(6, 2, 51, 0.7));
+  border-radius: 24px;
+  box-shadow: 0 0 10px 2px rgb(1, 1, 22);
+}
+
+.hidden {
+  display: none;
+}
+
+ #clickable-nav:hover { color: #66f; }
 
 @keyframes glow {
   from {
