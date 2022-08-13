@@ -1,9 +1,13 @@
-/* @@import "~/Ramastrap/ramastrap"; */
+/* @import "~/Ramastrap/ramastrap"; */
 :root {
   --bgColor: #e1e1e1;
   --fontColor: #1e1e1e;
+  --richblue: #66f;
   --maxHeight: 100%;
 }
+
+::-webkit-scrollbar { background-color: #2c88c0; }
+::-webkit-scrollbar-thumb { background-color: #1e1e1e; }
 
 * { margin: 0; padding: 0; }
 
@@ -29,7 +33,7 @@ nav.nav#nav {
   flex-direction: column;
   position: fixed;
   height: 100%;
-  background-color: #1e1e1e;
+  background-color: var(--fontColor);
   color: var(--bgColor);
   width: 250px;
 }
@@ -37,7 +41,7 @@ nav.nav#nav {
 .me {
   padding: 1.5em 0;
   animation: glow 2s infinite;
-  background-color: #66f;
+  background-color: var(--richblue);
   text-align: center;
   font-weight: 600;
   font-size: large;
@@ -73,9 +77,20 @@ div.name > .myname {
   color: #e1e1e1;
 }
 
+div.big-round-profile {
+  border-style: none;
+  width: 200pt;
+  height: 200pt;
+  border-radius: 50%;
+}
+
+img[src="assets/IMG_E3168.JPG"] {
+  object-fit: contain;
+}
+
 #clickable-nav { 
   cursor: pointer;
-  color: #2c88c0;
+  color: #c1d9e9;
   font-size: x-large;
   transition: .3s linear;
  }
@@ -99,7 +114,6 @@ main.main {
 
 main.main > .container-fluid > img[alt="view-profile"] {
   height: 800px;
-  
   opacity: 0.6;
   border-radius: 24px;
 }
@@ -138,5 +152,5 @@ main.main > .container-fluid > img[alt="view-profile"] {
   to {
     text-shadow: 0px 0px 10px rgb(230, 15, 169);
   }
-  
+
 }
