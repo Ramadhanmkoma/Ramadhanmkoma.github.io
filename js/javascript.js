@@ -34,7 +34,6 @@ let myNavHeadSec = () => {
     let myheadTitle = document.getElementById('mytitle');
         myheadTitle.style.cssText = `
           margin-left: 0;
-          width: 100%;
           transition: .5s ease-in;
         `;
     isAsideNavActive = true;

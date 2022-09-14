@@ -21,6 +21,7 @@
 html,
 body {
   height: 100vh;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -42,7 +43,7 @@ aside {
 nav.nav#nav {
   display: flex;
   flex-direction: column;
-  /* position: fixed; */
+  position: fixed;
   height: 100vh;
   background-color: var(--fontColor);
   color: var(--bgColor);
@@ -52,6 +53,10 @@ nav.nav#nav {
 
 .my-container {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  /* border: 5px solid red; */
+  position: relative;
 }
 
 .me {
@@ -87,12 +92,17 @@ nav.nav#nav > ul > li > a:hover {
   text-decoration: overline;
 }
 
-.myTitle {
+
+.myTitle#mytitle {
   box-shadow: 1px 1px 5px 0 #111;
   display: flex;
+  flex-wrap: wrap;
   padding: 0.64em;
+  position: absolute;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
 }
 
 div.name > .myname {
@@ -119,7 +129,38 @@ main.main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 100px;
+  height: 100vh;
+}
+
+main.main section.intro-sec {
+  /* border: 5px solid blue; */
+  padding: .3em 1em;
+}
+
+div.surround-p {
+  background-color: #3e3e3e;
+  border-radius: .6em;
+  box-shadow: 1px 1px 5px 1px #000;
+  padding: 2em 1.29em;
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+div.surround-p > div.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px 1px white;
+}
+
+p {
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.0cm;
 }
 
 .hidden {
