@@ -54,7 +54,7 @@ nav.nav#nav {
 .my-container {
   flex: 2;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* border: 5px solid red; */
   position: relative;
 }
@@ -126,16 +126,28 @@ div.social > a > i:hover {
 
 main.main {
   display: flex;
+  margin-top: 5em;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px 100px;
+  /* justify-content: center; */
+  padding: 30px 100px;
   height: 100vh;
 }
 
 main.main section.intro-sec {
   /* border: 5px solid blue; */
   padding: .3em 1em;
+}
+
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5em;
+}
+
+.experience > div {
+  flex-grow: 1;
+  width: 400px;
 }
 
 div.surround-p {
