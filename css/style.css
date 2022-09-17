@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +64,7 @@ nav.side-nav ul {
   display: flex;
   flex-direction: column;
   padding-left: 1em;
-  margin-top: 2em;
+  margin-top: 1.5em;
 }
 
 nav.side-nav ul li {
@@ -96,6 +97,10 @@ div.empty {
 footer span:nth-child(2) a {
   text-decoration: none;
   color: var(--dustyBlue);
+}
+
+footer span {
+  font-size: 12px;
 }
 /* Navigation Ends */
 
