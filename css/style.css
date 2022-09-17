@@ -78,8 +78,14 @@ nav.side-nav ul li > a {
   font-size: 18px;
 }
 
+nav.side-nav ul li > a > span {
+  margin-left: 0;
+  text-align: left;
+  font-size: 15px;
+}
+
 nav.side-nav ul li > a i {
-  margin-right: .35em;
+  width: 27px;
 }
 
 nav.side-nav ul li > a:nth-child(1):active {
