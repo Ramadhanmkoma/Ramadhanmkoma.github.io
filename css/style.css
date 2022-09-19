@@ -6,6 +6,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: .257s;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -13,6 +14,9 @@
   --lightNavy: #0D5A92;
   --darkishGray: #C2BFC0;
   --dustyBlue: #5091B7;
+}
+html,body {
+  height: 100vh;
 }
 
 body {
@@ -120,18 +124,66 @@ footer span {
 /* Main section Starts */
 main.my-main {
   margin-left: 230px;
-  padding: 20px;
+  /* padding: 0px 10px 0 10px; */
   height: 100vh;
+  overflow: auto;
   background-color: #1F2024;
 }
 
-main.my-main div#home {
+main.my-main div#home,
+main.my-main > section#about {
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  /* border: 4px solid blue; */
 }
+
+/* About Section starts */
+
+section#about {
+  background-color: #0D5A92;
+  /* border-radius: .4321em; */
+}
+
+section#about h2, 
+section#about p {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+section#about h2 {
+  font-size: 28px;
+}
+
+section#about p {
+  font-size: 20px;
+}
+
+/* About Section Ends here */
+
+
+/* Educatio Section Starts */
+
+section#edu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 35em);
+  gap: 1em;
+  background-color: var(--almostBlack);
+  padding: 30px 20px;
+  justify-content: center;
+  height: 100%;
+}
+
+section#edu > div.education-hist {
+  background-color: #303234;
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Eduction Section Ends */
 
 main.my-main div#home h1,
 main.my-main div#home h3 {
@@ -146,8 +198,67 @@ main.my-main div#home h3 {
 main.my-main div#home h3 span {
   padding-bottom: .15em;
   border-bottom: 3px solid var(--lightNavy);
+  /* border-radius: 0 30px 30px 10px; */
+  padding: .1em .4em .1em 0;
+  font-weight: 500;
+  animation: rainbow 1s infinite;
 }
 
 /* Main Section ends here */
 
+
+/* Animations starts */
+
+@keyframes rainbow {
+  from {
+    border-bottom-color: var(--lightNavy);
+    /* color: var(--lightNavy); */
+  }
+
+  25% {
+    border-bottom-color: #F66;
+    border-right: 3px solid #6F6;
+    /* color: #F66; */
+  }
+
+  50% {
+    border-bottom-color: #6F6;
+    border-right: 3px solid #66F;
+    /* color: #66F; */
+  }
+
+  75% {
+    border-bottom-color: #66F;
+    border-right: 3px solid #F66;
+    /* color: #6F6; */
+    /* padding-right: 30em; */
+  }
+
+  to {
+    border-bottom-color: var(--lightNavy);
+  }
+}
+
+/* Animation ends */
+
+/* Media Queries starts */
+
+@media screen and (max-width: 768px) {
+  nav.side-nav {
+    margin-left: -236px;
+    transition: .4s linear;
+  }
+
+  main.my-main {
+    margin-left: 0;
+    transition: .4s linear;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  section#about {
+    background-color: transparent !important;
+  }
+}
+/* Media Querirs ends */
 
