@@ -1,0 +1,41 @@
+{
+    "name": "Blue-eMarket",
+    "short_name": "eBlueMarket",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#6666FF",
+    "theme_color": "#7777FF",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/assets/icons/be-logo-64x64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/assets/icons/be-logo-96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/assets/logos/bE-logo4.png",
+            "type": "image/png",
+            "sizes": "500x500"
+        },
+        {
+            "src": "/assets/icons/be-logo-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "/assets/logos/bE-logo5.png",
+            "type": "image/png",
+            "sizes": "500x500"
+        },
+        {
+            "src": "/assets/logos/bE-logo6.png",
+            "type": "image/png",
+            "sizes": "500x500"
+        }
+   ]
+}
