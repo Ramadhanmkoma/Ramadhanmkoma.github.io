@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.css.map" />
+    <link rel="manifest" href="app.manifest.json">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
     <!-- Side Navigation -->
     <nav class="side-nav">
       <!-- Profile Image -->
       <span>
-        <img src="./assets/IMG_E3168.JPG" alt="Ramadhan's profile image" width="120" height="120" />
+        <img src="./assets/images/Ramadhan's.jpg" alt="Ramadhan's profile image" width="120" height="120" />
       </span>
 
       <!-- Profile name -->
@@ -32,7 +35,7 @@
         <a href="http://www.github.com/Ramadhanmkoma" target="_blank" role="button">
           <i class="fa fa-github"> </i>
         </a>
-        <a href="http://www.twitter.com/" target="_blank" role="button">
+        <a href="http://www.twitter.com/MkomaRamadhan" target="_blank" role="button">
           <i class="fa fa-twitter"> </i>
         </a>
         <a href="http://www.linkedin.com/" target="_blank" role="button">
@@ -103,6 +106,29 @@
     <!-- Main Articles -->
     <main class="my-main">
       <div id="home">
+        <div class="mobile-social_features">
+          <span>
+            <a href="http://www.github.com/Ramadhanmkoma" target="_blank" aria-label="github">
+              <i class="fa fa-github"></i>
+            </a>
+            <a href="http://www.twitter.com/MkomaRamadhan" target="_blank" aria-label="twitter">
+              <i class="fa fa-twitter"> </i>
+            </a>
+            <a href="#" target="_blank" aria-label="linkedin">
+              <i class="fa fa-linkedin"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="instagram">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="mailto:ramadhanmkoma@gmail.com" target="_blank" aria-label="mail">
+              <i class="fa far fa-envelope"></i>
+            </a>
+            <a href="#" target="_blank" aria-label="whatsapp">
+              <i class="fa fa-whatsapp"></i>
+            </a>
+          </span>
+        </div>
+       <img src="./assets/images/Ramadhan's.jpg" alt="" srcset="">
        <h1>Ramadhan Mohammed Mkoma</h1>
        <h3>Computer <span>Scientist</span></h3>
       </div>
@@ -111,7 +137,7 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          Names: Ramadhan Mohammed Mkoma, 23 yrs old. A Computer science student at The State University of Zanzibar SUZA - Degree Holder. As a CS Student, i am mostly dealing with creating computer programs, web development, Android Apps Development through different kinds of new Technologies, also i like problem solving and volunteering. I look forward to further my knowledge and becoming an expert on Tech stuffs so as to help solve the society problems by providing better and intelligent solutions and ideas using the knowledge i have got.
+          Names: Ramadhan Mohammed Mkoma, 23 yrs old. A Computer science student at The State University of Zanzibar (SUZA) - Degree Holder. As a CS Student, i am mostly dealing with creating computer programs, web development, Android Apps Development through different kinds of new Technologies, also i like problem solving and volunteering. I look forward to further my knowledge and becoming an expert on Tech stuffs so as to help solve the society problems by providing better and intelligent solutions and ideas using the knowledge i have got.
         </p>
         <br />
         <p>
@@ -123,7 +149,7 @@
       </section>
 
       <section id="edu">
-        <div class="education-hist">
+        <!-- <div class="education-hist">
           <h3>Sheikhat Issa Islamic Seminary</h3>
         </div>
 
@@ -137,10 +163,12 @@
 
         <div class="education-hist">
           <h3>The State University of Zanzibar</h3>
-        </div>
-      </section>
+        </div> -->
+      </section> 
     </main>
 
     <script src="./js/javascript.js"></script>
+    <script src="/sw.js"></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

@@ -14,7 +14,44 @@
   --lightNavy: #0d5a92;
   --darkishGray: #c2bfc0;
   --dustyBlue: #5091b7;
+
+   /* My Colors */
+   --sblue: steelblue;
+   --myFavDark: #222;
+   --myFavBlue: #6666ff;
+   --myFavGreen: #66ff66;
+   --myFavRed: #ff6666;
+   --color-primary: #7380ec;
+   --color-danger: #ff7782;
+   --color-success: #41f1b6;
+   --color-warning: #ffbb55;
+   --color-white: #fff;
+   --color-info-dark: #7d8da1;
+   --color-info-white: #dce1eb;
+   --color-dark: #363949;
+   --color-light-trans: rgba(132, 139, 200, 0.18);
+   --color-primary-variant: #111e88;
+   --color-dark-variant: #677483;
+   --color-background: #f6f7f9;
+   --color-primary-trans: #f5f5f599;
+   /* Sizes */
+   --card-border-radius: 2rem;
+   --border-radius-1: 0.4rem;
+   --border-radius-2: 0.8rem;
+   --border-radius-1: 1.2rem;
+ 
+   /* Shadows */
+   --box-shadow: 0 2rem 3rem var(var(--color-light-trans));
+ 
+   /* DARK THEME VARIABLES */
+   --background-dark: #181a1e;
+   --color-dark-white: #202528;
+   --color-background-dark: #f2f3fa;
+   --color-background-dark-variant: #a3bdcc;
+   --color-light: rgba(0, 0, 0, 0.4);
+   --box-shadow: 0 2rem 2rem var(--color-light);
 }
+
 html,
 body {
   height: 100vh;
@@ -137,6 +174,47 @@ main.my-main > section#about {
   flex-direction: column;
   justify-content: center;
   height: 100%;
+}
+
+div#home {
+  /* border: 1px solid red; */
+}
+
+.mobile-social_features {
+  max-width: fit-content;
+  margin: .239em auto;
+  justify-content: center;
+  align-self: center;
+  background-color: var(--almostBlack);
+  box-shadow: 0 .5em 1em 5px #000;
+  position: fixed;
+  top: 20px;
+  padding: .81em 1em;
+  border-radius: 24px;
+}
+
+.mobile-social_features > span {
+  display: flex;
+  gap: 1.5em;
+  overflow-x: auto;
+  scroll-snap-type: mandatory;
+}
+
+.mobile-social_features > span > a {
+  color: white;
+  font-size: larger;
+}
+
+.mobile-social_features > span > a:hover {
+  color: var(--color-primary);
+}
+
+main.my-main div#home > img {
+  display: none;
+  margin: 0 auto 1em auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
 }
 
 /* About Section starts */
@@ -269,6 +347,10 @@ main.my-main div#home h3 span {
 @media (max-width: 540px) {
   section#edu {
     grid-template-columns: repeat(auto-fill, 30em);
+  }
+
+  #home > img {
+    display: flex !important;
   }
 }
 
