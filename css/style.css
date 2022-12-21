@@ -53,6 +53,14 @@
    --box-shadow: 0 2rem 2rem var(--color-light);
 }
 
+::-webkit-scrollbar {
+  scrollbar-width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  scrollbar-width: 2px;
+}
+
 html,
 body {
   height: 100vh;
@@ -109,6 +117,8 @@ nav.side-nav ul {
   width: 100%;
   list-style: none;
   display: flex;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
   flex-direction: column;
   padding-left: 1em;
   margin-top: 1.5em;
@@ -295,13 +305,14 @@ main.my-main div#home h3 span {
   overflow-x: auto;
   justify-content: center;
   gap: 1.5em;
-  z-index: 1111;
+  z-index: 111;
   position: fixed;
   width: 100%;
   background-color: var(--almostBlack);
   box-shadow: 0 -10px 10px #000;
   bottom: 0;
-  padding: 1.2em 1rem;
+  padding: 1.4em 1rem;
+  border-radius: 26px 26px 0 0;
 }
 
 .mobile-footer span {
@@ -369,6 +380,18 @@ main.my-main div#home h3 span {
   section#about p {
     font-size: large;
   }
+
+  #home > img {
+    display: flex !important;
+  }
+
+  .mobile-social_features {
+    display: flex;
+  }
+
+  .mobile-footer {
+    display: flex !important;
+  }
 }
 
 @media (max-height: 680px) and (max-width: 380px) {
@@ -383,17 +406,6 @@ main.my-main div#home h3 span {
     grid-template-columns: repeat(auto-fill, 30em);
   }
 
-  #home > img {
-    display: flex !important;
-  }
-
-  .mobile-social_features {
-    display: flex;
-  }
-
-  .mobile-footer {
-    display: flex !important;
-  }
 }
 
 @media (max-width: 375px) {
