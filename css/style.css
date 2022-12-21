@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 0.257s;
+  transition: 0.157s;
   scroll-behavior: smooth;
   text-decoration: none;
 }
@@ -71,6 +71,12 @@ body {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #f0f1f1;
+}
+
+button {
+  border-radius: .23rem;
+  cursor: pointer;
+  border: 1px solid transparent;
 }
 
 /* Navigation Starts */
