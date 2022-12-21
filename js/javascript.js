@@ -1,7 +1,26 @@
 "use strict"
 const projectTitle = "Ramadhan Mohammed Mkoma";
-// let isAsideNavActive = true;
 
+// whatsapp QR Code banner slider
+let done = document.getElementById('chevron-down'),
+    tsapp_banner = document.getElementById('tsapp-qr'),
+    whatsappQRCode = document.getElementById('whatsapp-link');
+
+
+window.document.addEventListener('DOMContentLoaded', function(){
+    
+    done.addEventListener('click', function() {
+        tsapp_banner.classList.remove('isTop');
+    });
+
+    whatsappQRCode.addEventListener('click', function () {
+        tsapp_banner.classList.add('isTop');
+    });
+
+});
+
+
+// let isAsideNavActive = true;
 
 // let showImage = false;
 
