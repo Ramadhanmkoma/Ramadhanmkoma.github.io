@@ -1,5 +1,5 @@
-// //"use strict"
-// const projectTitle = "Ramadhan Mohammed Mkoma";
+"use strict"
+const projectTitle = "Ramadhan Mohammed Mkoma";
 // let isAsideNavActive = true;
 
 
@@ -39,3 +39,4 @@
 //     isAsideNavActive = true;
 //   }
 // }
+

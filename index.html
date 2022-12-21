@@ -12,9 +12,23 @@
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.css.map" />
+
+    <!-- PWA features -->
     <link rel="manifest" href="app.manifest.json">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/Ramadhan's.jpg" type="image/x-icon">
+
+    <meta
+      name="description"
+      content="Author: M.M. Ramadhan,
+    Ramadhan Mkoma official blog page, home page with simple description"
+    />
+
+     <!-- IOS Support -->
+     <link rel="apple-touch-icon" href="/assets/icons/Ramadhan's.jpg">
+     <meta name="apple-mobile-web-app-status-bar" content="#181a1e">
+ 
+     <meta name="theme-color" content="#363949">
   </head>
   <body>
     <!-- Side Navigation -->
@@ -75,7 +89,7 @@
         </li>
         <li>
           <a href="#work">
-            <i class="fa fa-fire"> </i>
+            <i class="fa fa-code"> </i>
             <span> Work Experience</span>
           </a>
         </li>
@@ -165,10 +179,47 @@
           <h3>The State University of Zanzibar</h3>
         </div> -->
       </section> 
+
+      <section class="mobile-footer" id="mob_footer">
+
+        <!-- <a href="#" onclick="scrollToLeft()" role="scrollbar" aria-label="scroll back">
+          <i class="fa fas fas fa-chevron-circle-left"></i>
+        </a> -->
+
+        <span id="mob-foot-span">
+         
+          <a href="#home" aria-label="home">
+            <i class="fa fa-home"></i>
+          </a>
+          <a href="#about" aria-label="about">
+            <i class="fa far fa-user-circle"> </i>
+          </a>
+          <a href="#services" aria-label="services">
+            <i class="fa fas fa-cogs"></i>
+          </a>
+          <a href="#edu" aria-label="education background">
+            <i class="fa fas fa-graduation-cap"></i>
+          </a>
+          <a href="#work" aria-label="work experience">
+            <i class="fa fas fa-code"></i>
+          </a>
+          <a href="#skills" aria-label="skills">
+            <i class="fa fa-bar-chart"></i>
+          </a>
+          <a href="tel:+255 766 570 255">
+            <i class="fa fa-phone"></i>
+          </a>
+          
+        </span>
+
+        <!-- <a href="#" role="scrollbar" onclick="scrollRight()" aria-label="scroll foward">
+          <i class="fa fas fas fa-chevron-circle-right"></i>
+        </a> -->
+
+      </section>
     </main>
 
     <script src="./js/javascript.js"></script>
-    <script src="/sw.js"></script>
     <script src="/js/app.js"></script>
   </body>
 </html>

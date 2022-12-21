@@ -7,6 +7,7 @@
   box-sizing: border-box;
   transition: 0.257s;
   scroll-behavior: smooth;
+  text-decoration: none;
 }
 
 :root {
@@ -181,6 +182,7 @@ div#home {
 }
 
 .mobile-social_features {
+  display: none;
   max-width: fit-content;
   margin: .239em auto;
   justify-content: center;
@@ -285,6 +287,38 @@ main.my-main div#home h3 span {
 
 /* Main Section ends here */
 
+
+/* Mobile footer starts */
+
+.mobile-footer {
+  display: none;
+  overflow-x: auto;
+  justify-content: center;
+  gap: 1.5em;
+  z-index: 1111;
+  position: fixed;
+  width: 100%;
+  background-color: var(--almostBlack);
+  box-shadow: 0 -10px 10px #000;
+  bottom: 0;
+  padding: 1.2em 1rem;
+}
+
+.mobile-footer span {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+}
+
+.mobile-footer a {
+  color: var(--color-background-dark);
+  font-size: x-large;
+  scroll-snap-align: start !important;
+}
+
+/* Mobile footer ends */
+
 /* Animations starts */
 
 @keyframes rainbow {
@@ -350,6 +384,14 @@ main.my-main div#home h3 span {
   }
 
   #home > img {
+    display: flex !important;
+  }
+
+  .mobile-social_features {
+    display: flex;
+  }
+
+  .mobile-footer {
     display: flex !important;
   }
 }

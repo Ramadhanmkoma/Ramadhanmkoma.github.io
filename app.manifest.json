@@ -3,8 +3,8 @@
     "short_name": "@Ramadhanmkoma",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#6666FF",
-    "theme_color": "#7777FF",
+    "background_color": "#363949",
+    "theme_color": "#363949",
     "orientation": "portrait-primary",
     "icons": [
         {
@@ -18,6 +18,11 @@
             "sizes": "96x96"
         },
         {
+            "src": "/assets/icons/Ramadhan's.jpg",
+            "type": "image/png",
+            "sizes": "150x120"
+        },
+        {
             "src": "/assets/logos/bE-logo4.png",
             "type": "image/png",
             "sizes": "500x500"
@@ -29,11 +34,6 @@
         },
         {
             "src": "/assets/logos/bE-logo5.png",
-            "type": "image/png",
-            "sizes": "500x500"
-        },
-        {
-            "src": "/assets/logos/bE-logo6.png",
             "type": "image/png",
             "sizes": "500x500"
         }
