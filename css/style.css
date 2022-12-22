@@ -82,6 +82,7 @@ button {
 /* Navigation Starts */
 nav.side-nav {
   position: fixed;
+  z-index: 1111;
   display: flex;
   flex-direction: column;
   background-color: var(--almostBlack);
@@ -260,6 +261,59 @@ section#about p {
 
 /* About Section Ends here */
 
+/* Service Section starts */
+
+section#services {
+  display: flex;
+  flex-direction: column;
+
+}
+
+section#services .service_primary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary-variant);
+  height: 200px;
+  padding: 20px;
+}
+
+section#services .service_item {
+  position: relative;
+  padding: 20px;
+  background-color: #1c1f20;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.74em;
+  justify-content: center;
+}
+
+section#services .service_item .servicebox {
+  padding: 2.619em;
+  background-color: #1c1f20;
+  border-radius: .33rem;
+  box-shadow: var(--box-shadow);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -60px;
+}
+
+section#services .service_item .servicebox i {
+  background-color: var(--myFavBlue);
+  width: fit-content;
+  padding: 1.5em;
+  border-radius: 50%;
+  box-shadow: 0 1em 1em #000;
+  margin: .78em 0;
+}
+
+/* ends services */
+
 /* Educatio Section Starts */
 
 section#edu {
@@ -278,6 +332,11 @@ section#edu > div.education-hist {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+p.service-desc {
+  text-align: justify;
+  margin: .5em 0;
 }
 
 /* Eduction Section Ends */
@@ -452,11 +511,20 @@ main.my-main div#home h3 span {
     grid-template-columns: repeat(auto-fill, 30em);
   }
 
+  section#services .service_item .servicebox {
+    width: 370px !important;
+    gap: 2em;
+  }
+
 }
 
 @media (max-width: 375px) {
   section#edu {
     grid-template-columns: repeat(auto-fill, 21em);
+  }
+
+  section#services .service_item .servicebox {
+    width: 360px !important;
   }
 }
 
@@ -467,6 +535,10 @@ main.my-main div#home h3 span {
 
   section#about p {
     font-size: large;
+  }
+
+  section#services .service_item .servicebox {
+    width: 270px !important;
   }
 }
 /* Media Querirs ends */
