@@ -305,7 +305,7 @@ section#services .service_item .servicebox {
 }
 
 section#services .service_item .servicebox i {
-  background-color: var(--myFavBlue);
+  background-color: var(--color-primary-variant);
   width: 70px;
   height: 70px;
   display: grid;
