@@ -199,6 +199,7 @@ div#home {
 }
 
 .mobile-social_features {
+  z-index: 11;
   display: none;
   max-width: fit-content;
   margin: .239em auto;
@@ -305,11 +306,15 @@ section#services .service_item .servicebox {
 
 section#services .service_item .servicebox i {
   background-color: var(--myFavBlue);
-  width: fit-content;
-  padding: 1.5em;
+  width: 70px;
+  height: 70px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   box-shadow: 0 1em 1em #000;
   margin: .78em 0;
+  font-size: x-large;
 }
 
 /* ends services */
