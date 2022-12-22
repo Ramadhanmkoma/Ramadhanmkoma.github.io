@@ -8,6 +8,10 @@
   transition: 0.157s;
   scroll-behavior: smooth;
   text-decoration: none;
+  /* scrollbar-color: var(--almostBlack);
+  scrollbar-face-color: var(--almostBlack);
+  scrollbar-track-color: var(--almostBlack);
+  scrollbar-base-color: var(--almostBlack); */
 }
 
 :root {
@@ -342,6 +346,12 @@ section#edu > div.education-hist {
 p.service-desc {
   text-align: justify;
   margin: .5em 0;
+}
+
+.servicebox:hover {
+  animation: rainbow 1s infinite;
+  transform: scale(1.03);
+  transition: .3s linear;
 }
 
 /* Eduction Section Ends */
