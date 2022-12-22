@@ -17,8 +17,33 @@ window.document.addEventListener('DOMContentLoaded', function(){
         tsapp_banner.classList.add('isTop');
     });
 
+    // notification API 
+    notification();
+    
 });
 
+// document.addEventListener('progress', notification());
+
+let notification = () => {
+    let track = false;
+    Notification.requestPermission().then((perm) => {
+    
+        console.log(`Notification access ${ perm }`);
+
+        if (perm === 'granted') {
+            let notify = new Notification('Ramadhan', {
+                body: `Hello!, Thank you for visiting my website, feel free to contact me for any questions or help.`,
+                data: { name: 'M.M Ramadhan'},
+                icon: '/assets/icons/Ramadhan\'s.jpg',
+                tag: 'Welcome Message'
+            });
+
+            notify.addEventListener('close', (e) => {
+                console.log(e);
+            });
+        }
+    })
+}
 
 // let isAsideNavActive = true;
 
