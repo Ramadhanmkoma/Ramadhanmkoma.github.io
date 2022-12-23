@@ -8,34 +8,29 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "/assets/icons/be-logo-64x64.png",
+            "src": "/assets/icons/Ramadhan-64x64.png",
             "type": "image/png",
             "sizes": "64x64"
         },
         {
-            "src": "/assets/icons/be-logo-96x96.png",
+            "src": "/assets/icons/Ramadhan-96x96.png",
             "type": "image/png",
             "sizes": "96x96"
         },
         {
-            "src": "/assets/icons/Ramadhan's.jpg",
+            "src": "/assets/icons/Ramadhan-150x120.jpg",
             "type": "image/png",
             "sizes": "150x120"
         },
         {
-            "src": "/assets/logos/bE-logo4.png",
+            "src": "/assets/logos/Ramadhan-500x500.png",
             "type": "image/png",
             "sizes": "500x500"
         },
         {
-            "src": "/assets/icons/be-logo-512x512.png",
+            "src": "/assets/icons/Ramadhan-512x512.png",
             "type": "image/png",
             "sizes": "512x512"
-        },
-        {
-            "src": "/assets/logos/bE-logo5.png",
-            "type": "image/png",
-            "sizes": "500x500"
         }
    ]
 }

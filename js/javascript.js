@@ -19,10 +19,6 @@ window.document.addEventListener('DOMContentLoaded', function(){
 
     // notification API 
     notification();
-
-    // sessionStorage.setItem('notification', JSON.stringify(notification()));
-    // const myNotifyData = JSON.parse(sessionStorage.getItem('notification'));
-    // console.log(myNotifyData);
     
 });
 
