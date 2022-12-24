@@ -185,7 +185,6 @@ footer span {
 /* Main section Starts */
 main.my-main {
   margin-left: 230px;
-  /* padding: 0px 10px 0 10px; */
   height: 100vh;
   overflow: auto;
   background-color: #1f2024;
@@ -212,7 +211,7 @@ div#home div.dance-ball-con {
   width: 100%;
 }
 
-div#home div.dance-ball-con .dance-balls {
+/* div#home div.dance-ball-con .dance-balls {
   padding: 1em;
   position: absolute;
   border-radius: 50%;
@@ -241,11 +240,11 @@ div#home div.dance-ball-con .dance-balls {
   bottom: 1em;
   right: 1em;
   animation: dance4 10s 9s infinite;
-}
+} */
 
 /* dance animation starts */
 
-@keyframes dance {
+/* @keyframes dance {
   from {
     top: 0%;
     transform: translateX(180deg);
@@ -351,7 +350,7 @@ div#home div.dance-ball-con .dance-balls {
     bottom: 0%;
     right: 0%;
   }
-}
+} */
 
 /* end of dance animation */
 
@@ -521,7 +520,6 @@ main.my-main div#home h3 {
 main.my-main div#home h3 span {
   padding-bottom: 0.15em;
   border-bottom: 3px solid var(--lightNavy);
-  /* border-radius: 0 30px 30px 10px; */
   padding: 0.1em 0.4em 0.1em 0;
   font-weight: 500;
   animation: rainbow 1s infinite;
@@ -536,7 +534,7 @@ main.my-main div#home h3 span {
   justify-items: center;
   position: fixed;
   bottom: 20px;
-  z-index: 11111;
+  z-index: 111;
   width: 100%;
   /* height: 100%; */
   margin-bottom: -950px;
