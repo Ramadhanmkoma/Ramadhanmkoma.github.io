@@ -1,0 +1,85 @@
+.setting-slider {
+  visibility: hidden;
+  display: none;
+  padding: 15px;
+}
+
+.h-close {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-close span {
+    cursor: pointer;
+    color: var(--color-danger);
+}
+
+.search span {
+    display: flex;
+    background-color: #124;
+    padding: .3em .5em;
+    border-radius: .4rem;
+    box-shadow: var(--box-shadow);
+}
+
+.search span input {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    font-size: medium;
+    width: 100%;
+}
+
+.u-profile {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: #124;
+    border-radius: .4rem;
+    padding: .43rem 1em;
+    box-shadow: var(--box-shadow);
+}
+
+.u-profile img {
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+}
+
+.u-profile span > span {
+    font-size: large;
+    font-weight: 500;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  .setting-slider {
+    visibility: visible;
+    display: flex;
+    gap: .89em;
+    height: 100%;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #001;
+    z-index: 22;
+    flex-direction: column;
+  }
+}
+
+@media (max-height: 680px) and (max-width: 380px) {
+}
+
+@media (max-width: 540px) {
+}
+
+@media (max-width: 375px) {
+}
+
+@media screen and (max-width: 280px) {
+}
+/* Media Querirs ends */
