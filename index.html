@@ -145,14 +145,14 @@
         </div>
 
         <!-- Setting Link Button -->
-        <span class="setting-link">
+        <span class="setting-link" id="open-setting">
           <i class="fa fas fas fa-cog" aria-label="settings"></i>
         </span>
         <!--  -->
+
        <img src="./assets/images/Ramadhan's.jpg" alt="" srcset="">
        <h1>Ramadhan Mohammed Mkoma</h1>
        <h3>Computer <span>Scientist</span></h3>
-
         
       </div>
 
@@ -244,8 +244,7 @@
       <!--  -->
 
       <!-- Setting Slider -->
-
-      <aside class="setting-slider">
+      <aside class="setting-slider slide-off" id="setting-id">
 
         <div class="h-close">
         <h3 class="h-setting">
@@ -253,7 +252,11 @@
         </h3>
 
         <!-- Close settings -->
-        <span class="fa fa-close"></span>
+        <button id="close-setting-btn" style="border: 1px solid transparent; padding: .2em .5em; background-color: #f665; color: white; box-shadow: 0 1em 1em #000;">
+        <span class="fa fa-close" aria-label="close settings"></span>
+        <strong>Close</strong>
+      </button>
+
       </div>
 
       <!-- Search Bar -->
@@ -280,6 +283,31 @@
 
         </div>
       <!-- /User profile -->
+
+      <!-- Blog Setting -->
+        <div class="u-profile blog-set">
+          <div class="mode">
+              <span class="fa fa-lightbulb-o" style="font-size: x-large;"></span>
+              &nbsp;&nbsp;
+              <div class="light-mode" style="border-bottom: 1px solid gray; padding-bottom: .74em;">
+                <span style="font-size: large;">Light Mode</span>
+                <span class="fa fa-toggle-off" style="font-size: x-large;"></span>
+              </div>
+          </div>
+          <div class="mode lang-choose" id="language">
+            <span class="fa fas fas fa-language" style="font-size: larger;"></span>
+            &nbsp;&nbsp;
+            <div class="light-mode">
+              <span style="font-size: large;">Language</span>
+              <span class="fa fas fa-chevron-right" style="font-size: large;"></span>
+            </div>
+        </div>
+
+        </div>
+      <!-- /Blog Setting -->
+
+      <!-- choose language -->
+      <div class="lang" id="google_translate_element"></div>
 
       </aside>
 
@@ -324,6 +352,7 @@
       </section>
     </main>
 
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./js/javascript.js"></script>
     <script src="/js/app.js"></script>
   </body>

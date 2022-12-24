@@ -17,10 +17,42 @@ window.document.addEventListener('DOMContentLoaded', function(){
         tsapp_banner.classList.add('isTop');
     });
 
+
+    /* Setting Navigation Code starts here */ 
+    let setting_btn = document.getElementById('open-setting'),
+        aside_setting = document.getElementById('setting-id');
+
+    setting_btn.addEventListener('click', function() {
+        aside_setting.classList.remove('slide-off');
+    });
+
+    let btn_close_setting = document.getElementById('close-setting-btn');
+    btn_close_setting.addEventListener('click', function() {
+        aside_setting.classList.add('slide-off');
+
+    });
+    /* Setting Navigation ends here */ 
+
+
+    document.getElementById('language').addEventListener('click', function() {
+        alert('choose');
+
+        document.getElementById('google_translate_element').classList.remove('lang');
+    });
+
     // notification API 
-    notification();
-    
+    // notification();    
 });
+
+// Google Translater API
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {
+            pageLanguage: 'en'
+        },
+        'google_translate_element'
+    );
+}
 
 // document.addEventListener('progress', notification());
 

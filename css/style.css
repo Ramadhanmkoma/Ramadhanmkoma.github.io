@@ -499,7 +499,6 @@ main.my-main div#home h3 span {
 /* Media Queries starts */
 
 @media screen and (max-width: 768px) {
-
   .dance-ball-con {
     visibility: hidden;
   }
@@ -550,6 +549,7 @@ main.my-main div#home h3 span {
     background-color: var(--almostBlack);
     border-radius: 50%;
   }
+
   
 }
 
@@ -607,7 +607,5 @@ main.my-main div#home h3 span {
   section#services .service_item .servicebox {
     width: 270px !important;
   }
-
-  
 }
 /* Media Querirs ends */
