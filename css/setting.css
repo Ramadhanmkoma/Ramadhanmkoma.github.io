@@ -18,6 +18,7 @@
 .search span {
     display: flex;
     background-color: #124;
+    align-items: center;
     padding: .3em .5em;
     border-radius: .4rem;
     box-shadow: var(--box-shadow);
