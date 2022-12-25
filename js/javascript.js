@@ -6,7 +6,6 @@ let done = document.getElementById('chevron-down'),
     tsapp_banner = document.getElementById('tsapp-qr'),
     whatsappQRCode = document.getElementById('whatsapp-link');
 
-
 window.document.addEventListener('DOMContentLoaded', function(){
     
     done.addEventListener('click', function() {
@@ -38,6 +37,31 @@ window.document.addEventListener('DOMContentLoaded', function(){
         alert('choose');
 
         document.getElementById('google_translate_element').classList.remove('lang');
+    });
+
+    let ligh_mode = document.getElementById('light-mode');
+    let isToggleOn = false;
+
+    ligh_mode.addEventListener('click', function() {
+        let light_on = new Audio('./assets/audio/on.mp3'),
+            light_off = new Audio('./assets/audio/off.mp3');
+        if (!isToggleOn) {
+            light_off.pause();
+            light_on.play();
+            ligh_mode.classList.remove('fa-toggle-off');
+            ligh_mode.classList.add('fa-toggle-on');
+            isToggleOn = true;    
+        } else {
+            light_on.pause();
+            light_off.play();
+            ligh_mode.classList.remove('fa-toggle-on');
+            ligh_mode.classList.add('fa-toggle-off');
+
+            isToggleOn = false;
+        }
+        
+        
+        
     });
 
     // notification API 
