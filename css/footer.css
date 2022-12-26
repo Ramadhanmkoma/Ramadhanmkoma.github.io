@@ -1,0 +1,57 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 2em 1em;
+  text-align: center;
+}
+
+.footer-left {
+  float: left;
+  width: 50%;
+}
+
+.footer-right {
+  float: right;
+  width: 50%;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-right p {
+  margin: 0;
+}
+
+.footer-right p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-right p a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-left p span {
+  margin-right: 1em;
+}
+
+.footer-right p span {
+  margin-right: 1em;
+}
+
+.footer-right p a span {
+  margin-right: 1em;
+}
+
+.footer-right p a span:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+}

@@ -334,22 +334,20 @@ section#services .service_item .servicebox i {
 /* Educatio Section Starts */
 
 section#edu {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 35em);
-  gap: 1em;
   background-color: var(--almostBlack);
   padding: 30px 20px;
   justify-content: center;
-  height: 100%;
+  height: 100vh;
 }
 
+/* 
 section#edu > div.education-hist {
   background-color: #303234;
   border-radius: 0.3rem;
   display: flex;
   flex-direction: column;
   text-align: center;
-}
+} */
 
 p.service-desc {
   text-align: justify;
@@ -460,6 +458,15 @@ main.my-main div#home h3 span {
   scroll-snap-align: start !important;
 }
 
+/* CV Download */
+a.mode div.light-mode{
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*  */
+
 /* Mobile footer ends */
 
 /* Animations starts */
@@ -550,7 +557,6 @@ main.my-main div#home h3 span {
     border-radius: 50%;
   }
 
-  
 }
 
 @media (max-height: 680px) and (max-width: 380px) {
@@ -561,9 +567,9 @@ main.my-main div#home h3 span {
 }
 
 @media (max-width: 540px) {
-  section#edu {
+  /* section#edu {
     grid-template-columns: repeat(auto-fill, 30em);
-  }
+  } */
 
   section#services .service_item .servicebox {
     width: 370px !important;
@@ -574,12 +580,13 @@ main.my-main div#home h3 span {
   .dance-balls {
     visibility: hidden;
   }
+
 }
 
 @media (max-width: 375px) {
-  section#edu {
+  /* section#edu {
     grid-template-columns: repeat(auto-fill, 21em);
-  }
+  } */
 
   section#services .service_item .servicebox {
     width: 360px !important;

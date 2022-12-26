@@ -10,6 +10,7 @@
       rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="/css/setting.css" />
+    <link rel="stylesheet" href="/css/footer.css" type="text/css">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.css" />
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.css.map" />
@@ -237,10 +238,47 @@
         </div>
       </section> 
 
-      <!-- Education -->
-      <section id="edu">
-         
-      </section> 
+      <!-- Education Background -->
+      <section id="edu" class="education">
+        <h2>Education Background</h2>
+        <hr width="100px" style="margin-top: .5em; border: 1pt solid white; background-color: white;"/>
+        <div class="edu">
+          <div class="edu-item">
+            <div class="edu-item-left">
+              <h3>2013 - 2016</h3>
+            </div>
+            <div class="edu-item-right">
+              <h3>Secondary School</h3>
+              <p>
+                I attended secondary school at Mkwawa Secondary School, Mkwawa, Zanzibar. I studied Mathematics, Physics, Chemistry, Biology, English, Kiswahili, Computer Studies, Geography, History, Islamic Studies, and Arabic.
+              </p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item-left">
+              <h3>2017 - 2020</h3>
+            </div>
+            <div class="edu-item-right">
+              <h3>University of Dar es Salaam</h3>
+              <p>
+                I attended University at University of Dar es salaam (UDSM), Dar es salaam, Tanzania. I studied Diploma in Computing & Information Technology and Mathematics.
+              </p>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-item-left">
+              <h3>2020 - 2023</h3>
+            </div>
+            <div class="edu-item-right">
+              <h3>The State University of Zanzibar</h3>
+              <p>
+                I am currently a student at The State University of Zanzibar (SUZA), Tanzania pursuing a bachelor's degree in computer science. I am also a self-taught web developer with a strong interest in web development, Data Science, design and Mobile application development.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </section>
       <!--  -->
 
       <!-- Setting Slider -->
@@ -280,7 +318,6 @@
           </span>
           &nbsp;&nbsp;
           <span class="fa fas fa-chevron-right"></span>
-
         </div>
       <!-- /User profile -->
 
@@ -291,20 +328,40 @@
               &nbsp;&nbsp;
               <div class="light-mode" style="border-bottom: 1px solid gray; padding-bottom: .74em;">
                 <span style="font-size: large;">Light Mode</span>
-                <span class="fa fa-toggle-off" id="light-mode" style="font-size: x-large;"></span>
+                <span class="fa fa-toggle-off" id="light-mode" style="font-size: x-large;" aria-label="light mode"></span>
               </div>
           </div>
           <div class="mode lang-choose" id="language">
             <span class="fa fas fas fa-language" style="font-size: larger;"></span>
             &nbsp;&nbsp;
-            <div class="light-mode">
+            <div class="light-mode" style="border-bottom: 1px solid gray; padding-bottom: .74em;">
               <span style="font-size: large;">Language</span>
               <span class="fa fas fa-chevron-right" style="font-size: large;"></span>
             </div>
         </div>
 
+        <!-- Download my cv -->
+        <div class="my-cv">
+          <a href="/assets/cv/Ramadhan_CV.pdf" download="Ramadhan_CV.pdf" style="text-decoration: none; color: white;" class="mode">
+            <span class="fa fas fa-download" style="font-size: larger;"></span>
+            &nbsp;&nbsp;
+            <div class="light-mode">
+              <span style="font-size: large;">Download CV</span>
+              <!-- <span class="fa fas fa-chevron-right" style="font-size: large;"></span> -->
+            </div>
+          </a>
+
+        </div>
+
+        <!--  -->
+
         </div>
       <!-- /Blog Setting -->
+
+      <!-- Language -->
+
+
+
 
       <!-- choose language -->
       <div class="lang" id="google_translate_element"></div>
@@ -316,7 +373,7 @@
       <section class="mobile-footer" id="mob_footer">
 
         <!-- <a href="#" onclick="scrollToLeft()" role="scrollbar" aria-label="scroll back">
-          <i class="fa fas fas fa-chevron-circle-left"></i>
+          <i class="fa fas fas fa-chevron-left"></i>
         </a> -->
 
         <span id="mob-foot-span">
@@ -346,11 +403,59 @@
         </span>
 
         <!-- <a href="#" role="scrollbar" onclick="scrollRight()" aria-label="scroll foward">
-          <i class="fa fas fas fa-chevron-circle-right"></i>
+          <i class="fa fas fas fa-chevron-right"></i>
         </a> -->
 
       </section>
-    </main>
+    
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-left">
+        <h3>Get in touch</h3>
+        <p>
+          <span class="fa fa-map-marker"></span>
+          <span>Chake Chake, Zanzibar</span>
+        </p>
+        <p>
+          <span class="fa fa-phone"></span>
+          <span>+255 766 570 255</span>
+        </p>
+        <p>
+          <span class="fa fa-envelope"></span>
+          <span>
+            <a href="mailto:ramadhanmkoma9.gmail.com">
+              Ramadhanmkoma9.gmail.com
+            </a>
+          </span>
+        </p>
+      </div>
+      <div class="footer-right">
+        <h3>Follow me</h3>
+        <p>
+          <a href="https://www.facebook.com/ramadhanmkoma" target="_blank" rel="noopener noreferrer">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a href="https://twitter.com/ramadhanmkoma" target="_blank" rel="noopener noreferrer">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a href="https://www.instagram.com/ramadhanmkoma/" target="_blank" rel="noopener noreferrer">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a href="https://www.linkedin.com/in/ramadhanmkoma/" target="_blank" rel="noopener noreferrer">
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a href="" target="_blank" rel="noopener noreferrer">
+            <span class="fa fa-github"></span>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+  </main>
+    <!--  -->
 
     <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./js/javascript.js"></script>

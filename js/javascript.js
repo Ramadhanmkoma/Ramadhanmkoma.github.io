@@ -53,15 +53,13 @@ window.document.addEventListener('DOMContentLoaded', function(){
             isToggleOn = true;    
         } else {
             light_on.pause();
-            light_off.play();
+            light_off.play(); 
             ligh_mode.classList.remove('fa-toggle-on');
             ligh_mode.classList.add('fa-toggle-off');
 
             isToggleOn = false;
         }
-        
-        
-        
+      
     });
 
     // notification API 
