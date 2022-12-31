@@ -44,5 +44,12 @@
       "personalization",
       "productivity",
       "social"
+    ],
+    "shortcuts": [
+      {
+        "name": "",
+        "url": "/",
+        "description": ""
+      }
     ]
   }
