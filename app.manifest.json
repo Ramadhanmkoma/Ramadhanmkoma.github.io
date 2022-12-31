@@ -1,36 +1,48 @@
 {
     "name": "Ramadhan Mohammed Mkoma",
-    "short_name": "@Ramadhanmkoma",
+    "short_name": "Ramadhanmkoma",
     "start_url": "/index.html",
     "display": "standalone",
     "background_color": "#363949",
     "theme_color": "#363949",
     "orientation": "portrait-primary",
     "icons": [
-        {
-            "src": "/assets/icons/Ramadhan-64x64.png",
-            "type": "image/png",
-            "sizes": "64x64"
-        },
-        {
-            "src": "/assets/icons/Ramadhan-96x96.png",
-            "type": "image/png",
-            "sizes": "96x96"
-        },
-        {
-            "src": "/assets/icons/Ramadhan-150x120.jpg",
-            "type": "image/png",
-            "sizes": "150x120"
-        },
-        {
-            "src": "/assets/logos/Ramadhan-500x500.png",
-            "type": "image/png",
-            "sizes": "500x500"
-        },
-        {
-            "src": "/assets/icons/Ramadhan-512x512.png",
-            "type": "image/png",
-            "sizes": "512x512"
-        }
-   ]
-}
+      {
+        "src": "/assets/icons/Ramadhan-64x64.png",
+        "type": "image/png",
+        "sizes": "64x64"
+      },
+      {
+        "src": "/assets/icons/Ramadhan-96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/assets/icons/Ramadhan-150x120.jpg",
+        "type": "image/png",
+        "sizes": "150x120"
+      },
+      {
+        "src": "/assets/logos/Ramadhan-500x500.png",
+        "type": "image/png",
+        "sizes": "500x500"
+      },
+      {
+        "src": "/assets/icons/Ramadhan-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "description": "This is my official web application, that contains my background information, CV and the services that I provide. Users can easily contact direct with me through WhatsApp, twitter and LinkedIn using this application. Hope you'll be comfortable with the app.",
+    "dir": "auto",
+    "lang": "en",
+    "display_override": [
+      "standalone"
+    ],
+    "categories": [
+      "education",
+      "personalization",
+      "productivity",
+      "social"
+    ]
+  }
