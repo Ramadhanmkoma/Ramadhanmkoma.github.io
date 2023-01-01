@@ -8,10 +8,6 @@
   transition: 0.157s;
   scroll-behavior: smooth;
   text-decoration: none;
-  /* scrollbar-color: var(--almostBlack);
-  scrollbar-face-color: var(--almostBlack);
-  scrollbar-track-color: var(--almostBlack);
-  scrollbar-base-color: var(--almostBlack); */
 }
 
 :root {
@@ -56,6 +52,20 @@
   --color-light: rgba(0, 0, 0, 0.4);
   --box-shadow: 0 2rem 2rem var(--color-light);
 }
+
+
+/* Theme Color */
+@media(prefers-color-scheme: light) {
+  :root {
+    --almostBlack: var(--color-background);
+    --dustyBlue: var(--color-primary-variant);
+    --color-white: var(--color-dark);
+    --darkishGray: var(--color-primary-variant);
+    --color-background-dark: var(--color-dark-white);
+    --color-info-white: var(--color-primary-variant);
+  }
+}
+/* /Theme Color */
 
 ::-webkit-scrollbar {
   scrollbar-width: 2px;
@@ -115,7 +125,7 @@ span.social {
 span.social a {
   margin: 0.2em 0.3em;
   font-size: 18px;
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   text-align: center;
 }
@@ -177,7 +187,7 @@ footer span:nth-child(2) a {
 
 footer span {
   font-size: 12px;
-  color: #fff;
+  color: var(--color-white);
   font-weight: 600;
 }
 /* Navigation Ends */
@@ -234,7 +244,7 @@ div#home div.dance-ball-con {
 }
 
 .mobile-social_features > span > a {
-  color: white;
+  color: var(--color-info-white);
   font-size: larger;
 }
 
@@ -338,6 +348,7 @@ section#edu {
   padding: 30px 20px;
   justify-content: center;
   height: 100vh;
+  color: var(--color-white);
 }
 
 /* 
@@ -549,6 +560,7 @@ a.mode div.light-mode{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0.5em 1em 5px #000;
+    color: var(--color-info-white);
     top: 28px;
     right: 15px;
     height: 2.5em;
@@ -616,3 +628,4 @@ a.mode div.light-mode{
   }
 }
 /* Media Querirs ends */
+
