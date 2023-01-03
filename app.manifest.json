@@ -51,5 +51,12 @@
         "url": "/",
         "description": ""
       }
+    ],
+    "related_applications": [
+      {
+        "platform": "webapp",
+        "url": "https://blue-emarket.netlify.app",
+        "id": ""
+      }
     ]
   }
