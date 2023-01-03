@@ -43,17 +43,17 @@ window.document.addEventListener('DOMContentLoaded', function(){
     let isToggleOn = false;
 
     ligh_mode.addEventListener('click', function() {
-        let light_on = new Audio('./assets/audio/on.mp3'),
-            light_off = new Audio('./assets/audio/off.mp3');
+        // let light_on = new Audio('./assets/audio/on.mp3'),
+            // light_off = new Audio('./assets/audio/off.mp3');
         if (!isToggleOn) {
-            light_off.pause();
-            light_on.play();
+            // light_off.pause();
+            // light_on.play();
             ligh_mode.classList.remove('fa-toggle-off');
             ligh_mode.classList.add('fa-toggle-on');
             isToggleOn = true;    
         } else {
-            light_on.pause();
-            light_off.play(); 
+            // light_on.pause();
+            // light_off.play(); 
             ligh_mode.classList.remove('fa-toggle-on');
             ligh_mode.classList.add('fa-toggle-off');
 
