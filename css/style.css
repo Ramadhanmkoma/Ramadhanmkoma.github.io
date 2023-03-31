@@ -285,6 +285,13 @@ section#about p {
 
 /* About Section Ends here */
 
+
+/* Typed.js */
+h3 #sci {
+  font-size: 40px;
+  font-weight: bolder !important;
+}
+
 /* Service Section starts */
 
 section#services {
