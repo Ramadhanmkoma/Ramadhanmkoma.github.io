@@ -590,6 +590,14 @@ a.mode div.light-mode{
     grid-template-columns: repeat(auto-fill, 30em);
   } */
 
+  h3 {
+    font-size: 20px !important;
+  }
+
+  h3 #sci {
+    /* font-size: 20px !important; */
+  }
+
   section#services .service_item .servicebox {
     width: 370px !important;
     border-radius: 2.43rem;
